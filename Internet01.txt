@@ -1,0 +1,22 @@
+#include <SPI.h>
+#include <Ethernet.h>//para conectar na intenet
+
+byte mac[] = {  
+  0x00, 0xAA, 0xBB, 0xCC, 0xDE, 0x02 }; //endereço mac paraidentificar na rede
+  
+  
+void setup(){
+    Serial.begin(9600);//comunicação comserial
+    Ethernet.begin(mac);//comunicando com internet
+    
+    if(Ethernet.begin(mac)==0){
+        Serial.println("Falha ao conectar a rede...");
+        Ethernet.begin(mac);
+    }
+    Serial.print("Conectado a rede com sucesso. IP: ");
+    Serial.println(Ethernet.localIP());
+}
+void loop(){
+
+
+}

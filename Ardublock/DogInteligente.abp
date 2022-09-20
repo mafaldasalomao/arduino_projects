@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cb:CODEBLOCKS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://education.mit.edu/openblocks/ns http://education.mit.edu/openblocks/codeblocks.xsd" xmlns:cb="http://education.mit.edu/openblocks/ns">
+<Pages collapsible-pages="yes" drawer-with-page="yes">
+<Page page-color="128 128 128" page-drawer="Main" page-infullview="yes" page-name="Main" page-width="1366">
+<PageBlocks>
+<Block genus-name="loop" id="158">
+<Location>
+<X>315</X>
+<Y>7</Y>
+</Location>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="195" connector-kind="socket" connector-type="cmd" init-type="cmd" label="fazer" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="if" id="195">
+<Location>
+<X>400</X>
+<Y>15</Y>
+</Location>
+<BeforeBlockId>158</BeforeBlockId>
+<AfterBlockId>193</AfterBlockId>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="160" connector-kind="socket" connector-type="boolean" init-type="boolean" label="teste" position-type="single"/>
+<BlockConnector con-block-id="172" connector-kind="socket" connector-type="cmd" init-type="cmd" label="entao" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="while" id="193">
+<Location>
+<X>400</X>
+<Y>120</Y>
+</Location>
+<BeforeBlockId>195</BeforeBlockId>
+<AfterBlockId>202</AfterBlockId>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="194" connector-kind="socket" connector-type="boolean" init-type="boolean" label="teste" position-type="single"/>
+<BlockConnector con-block-id="198" connector-kind="socket" connector-type="cmd" init-type="cmd" label="Comandos" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="if" id="202">
+<Location>
+<X>400</X>
+<Y>244</Y>
+</Location>
+<BeforeBlockId>193</BeforeBlockId>
+<AfterBlockId>212</AfterBlockId>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="203" connector-kind="socket" connector-type="boolean" init-type="boolean" label="teste" position-type="single"/>
+<BlockConnector con-block-id="222" connector-kind="socket" connector-type="cmd" init-type="cmd" label="entao" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="while" id="212">
+<Location>
+<X>400</X>
+<Y>349</Y>
+</Location>
+<BeforeBlockId>202</BeforeBlockId>
+<AfterBlockId>224</AfterBlockId>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="213" connector-kind="socket" connector-type="boolean" init-type="boolean" label="teste" position-type="single"/>
+<BlockConnector con-block-id="216" connector-kind="socket" connector-type="cmd" init-type="cmd" label="Comandos" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="if" id="224">
+<Location>
+<X>400</X>
+<Y>473</Y>
+</Location>
+<BeforeBlockId>212</BeforeBlockId>
+<AfterBlockId>234</AfterBlockId>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="231" connector-kind="socket" connector-type="boolean" init-type="boolean" label="teste" position-type="single"/>
+<BlockConnector con-block-id="232" connector-kind="socket" connector-type="cmd" init-type="cmd" label="entao" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="while" id="234">
+<Location>
+<X>400</X>
+<Y>596</Y>
+</Location>
+<BeforeBlockId>224</BeforeBlockId>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="235" connector-kind="socket" connector-type="boolean" init-type="boolean" label="teste" position-type="single"/>
+<BlockConnector con-block-id="242" connector-kind="socket" connector-type="cmd" init-type="cmd" label="Comandos" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="ROBOEDU_LED_color" id="242">
+<Location>
+<X>531</X>
+<Y>660</Y>
+</Location>
+<BeforeBlockId>234</BeforeBlockId>
+<Sockets num-sockets="3">
+<BlockConnector con-block-id="243" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Vermelho" position-type="single"/>
+<BlockConnector con-block-id="244" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Verde" position-type="single"/>
+<BlockConnector con-block-id="245" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Azul" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="true" id="245">
+<Location>
+<X>659</X>
+<Y>711</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="242" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="false" id="244">
+<Location>
+<X>659</X>
+<Y>687</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="242" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="false" id="243">
+<Location>
+<X>659</X>
+<Y>663</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="242" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="and" id="235">
+<Location>
+<X>534</X>
+<Y>599</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="234" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
+</Plug>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="236" connector-kind="socket" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
+<BlockConnector con-block-id="239" connector-kind="socket" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="less" id="239">
+<Location>
+<X>574</X>
+<Y>627</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="235" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="240" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="bottom"/>
+<BlockConnector con-block-id="241" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="241">
+<Label>25</Label>
+<Location>
+<X>789</X>
+<Y>630</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="239" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="ROBOEDU_ultrasound_sensor" id="240">
+<Location>
+<X>584</X>
+<Y>630</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="239" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="greater" id="236">
+<Location>
+<X>574</X>
+<Y>599</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="235" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="237" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="bottom"/>
+<BlockConnector con-block-id="238" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="238">
+<Label>15</Label>
+<Location>
+<X>789</X>
+<Y>602</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="236" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="ROBOEDU_ultrasound_sensor" id="237">
+<Location>
+<X>584</X>
+<Y>602</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="236" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="ROBOEDU_servo_left_stop" id="232">
+<Location>
+<X>471</X>
+<Y>537</Y>
+</Location>
+<BeforeBlockId>224</BeforeBlockId>
+<AfterBlockId>233</AfterBlockId>
+</Block>
+<Block genus-name="ROBOEDU_servo_right_stop" id="233">
+<Location>
+<X>471</X>
+<Y>561</Y>
+</Location>
+<BeforeBlockId>232</BeforeBlockId>
+</Block>
+<Block genus-name="and" id="231">
+<Location>
+<X>474</X>
+<Y>476</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="224" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
+</Plug>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="225" connector-kind="socket" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
+<BlockConnector con-block-id="228" connector-kind="socket" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="less" id="228">
+<Location>
+<X>514</X>
+<Y>504</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="231" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="229" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="bottom"/>
+<BlockConnector con-block-id="230" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="230">
+<Label>25</Label>
+<Location>
+<X>729</X>
+<Y>507</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="228" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="ROBOEDU_ultrasound_sensor" id="229">
+<Location>
+<X>524</X>
+<Y>507</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="228" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="greater" id="225">
+<Location>
+<X>514</X>
+<Y>476</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="231" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="226" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="bottom"/>
+<BlockConnector con-block-id="227" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="227">
+<Label>15</Label>
+<Location>
+<X>729</X>
+<Y>479</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="225" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="ROBOEDU_ultrasound_sensor" id="226">
+<Location>
+<X>524</X>
+<Y>479</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="225" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="ROBOEDU_LED_color" id="216">
+<Location>
+<X>531</X>
+<Y>385</Y>
+</Location>
+<BeforeBlockId>212</BeforeBlockId>
+<Sockets num-sockets="3">
+<BlockConnector con-block-id="217" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Vermelho" position-type="single"/>
+<BlockConnector con-block-id="218" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Verde" position-type="single"/>
+<BlockConnector con-block-id="219" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Azul" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="false" id="219">
+<Location>
+<X>659</X>
+<Y>436</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="216" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="false" id="218">
+<Location>
+<X>659</X>
+<Y>412</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="216" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="true" id="217">
+<Location>
+<X>659</X>
+<Y>388</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="216" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="less_equal" id="213">
+<Location>
+<X>534</X>
+<Y>352</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="212" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="214" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="bottom"/>
+<BlockConnector con-block-id="215" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="215">
+<Label>15</Label>
+<Location>
+<X>756</X>
+<Y>355</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="213" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="ROBOEDU_ultrasound_sensor" id="214">
+<Location>
+<X>544</X>
+<Y>355</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="213" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="ROBOEDU_servo_left_back" id="222">
+<Location>
+<X>471</X>
+<Y>280</Y>
+</Location>
+<BeforeBlockId>202</BeforeBlockId>
+<AfterBlockId>208</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="223" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="ROBOEDU_servo_right_back" id="208">
+<Location>
+<X>471</X>
+<Y>310</Y>
+</Location>
+<BeforeBlockId>222</BeforeBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="209" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="209">
+<Label>75</Label>
+<Location>
+<X>641</X>
+<Y>313</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="208" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="number" id="223">
+<Label>75</Label>
+<Location>
+<X>647</X>
+<Y>283</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="222" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="less_equal" id="203">
+<Location>
+<X>474</X>
+<Y>247</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="202" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="204" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="bottom"/>
+<BlockConnector con-block-id="205" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="205">
+<Label>15</Label>
+<Location>
+<X>696</X>
+<Y>250</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="203" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="ROBOEDU_ultrasound_sensor" id="204">
+<Location>
+<X>484</X>
+<Y>250</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="203" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="ROBOEDU_LED_color" id="198">
+<Location>
+<X>531</X>
+<Y>156</Y>
+</Location>
+<BeforeBlockId>193</BeforeBlockId>
+<Sockets num-sockets="3">
+<BlockConnector con-block-id="199" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Vermelho" position-type="single"/>
+<BlockConnector con-block-id="200" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Verde" position-type="single"/>
+<BlockConnector con-block-id="201" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Azul" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="false" id="201">
+<Location>
+<X>659</X>
+<Y>207</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="198" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="true" id="200">
+<Location>
+<X>659</X>
+<Y>183</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="198" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="false" id="199">
+<Location>
+<X>659</X>
+<Y>159</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="198" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="greater_equal" id="194">
+<Location>
+<X>534</X>
+<Y>123</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="193" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="196" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="bottom"/>
+<BlockConnector con-block-id="197" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="197">
+<Label>25</Label>
+<Location>
+<X>756</X>
+<Y>126</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="194" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="ROBOEDU_ultrasound_sensor" id="196">
+<Location>
+<X>544</X>
+<Y>126</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="194" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="ROBOEDU_servo_left" id="172">
+<Location>
+<X>471</X>
+<Y>51</Y>
+</Location>
+<BeforeBlockId>195</BeforeBlockId>
+<AfterBlockId>220</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="173" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="ROBOEDU_servo_right" id="220">
+<Location>
+<X>471</X>
+<Y>81</Y>
+</Location>
+<BeforeBlockId>172</BeforeBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="221" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="221">
+<Label>75</Label>
+<Location>
+<X>619</X>
+<Y>84</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="220" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="number" id="173">
+<Label>75</Label>
+<Location>
+<X>627</X>
+<Y>54</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="172" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="greater_equal" id="160">
+<Location>
+<X>474</X>
+<Y>18</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="195" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="171" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="bottom"/>
+<BlockConnector con-block-id="162" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="162">
+<Label>25</Label>
+<Location>
+<X>696</X>
+<Y>21</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="160" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="ROBOEDU_ultrasound_sensor" id="171">
+<Location>
+<X>484</X>
+<Y>21</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="160" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+</PageBlocks>
+</Page>
+</Pages>
+</cb:CODEBLOCKS>

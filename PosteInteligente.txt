@@ -1,0 +1,61 @@
+/*
+Projeto Arduino com LCD. 
+Por Salomão Machado Mafalda
+*/
+ 
+//Define a utilização da biblioteca para controle de telas LDCs.
+ #include "LiquidCrystal.h"
+ 
+//Criando um objeto da classe LiquidCrystal e 
+//inicializando com os pinos da interface.
+LiquidCrystal lcd(9, 8, 5, 4, 3, 2);
+int limiteDisparo = 600;
+ 
+// Ligue o LED ao pino digital 10
+int led = 10;
+ 
+// O fotoresistor (LDR) é conectado ao pino analógico 0
+int sensor = A0;
+ 
+// Armazena o valor de leitura analógica
+int sensorValue = 0;
+ 
+void setup() {
+  //Inicializando o LCD e informando o tamanho de 16 colunas e 2 linhas
+  //que é o tamanho do LCD JHD 162A usado neste projeto.
+  lcd.begin(16, 2); 
+   // Define o LED como uma saída
+  pinMode(led, OUTPUT);
+  
+  // Define o fotoresistor como uma entrada
+  pinMode(sensor, INPUT);
+  
+  // Inicia a comunicação serial com uma taxa de transmissão de 9600 boud rate
+  Serial.begin(9600);
+}
+ 
+void loop() {
+  // Lê o valor atual do fotoresistor
+  sensorValue = analogRead(sensor);
+  
+  // Se o valor estiver abaixo de um determinado "limite de disparo", então o LED liga, caso contrário o LED permanece desligado
+  
+  if (sensorValue > limiteDisparo) {
+     lcd.clear();          //limpa o display do LCD.     
+    lcd.print("Poste C/ Energia!");  //imprime a string no display do LCD.
+    delay(2000);   
+  }
+  else {
+      lcd.clear();          //limpa o display do LCD.     
+    lcd.print("Poste S/ Energia ");  //imprime a string no display do LCD.
+    delay(2000);   
+  }
+  
+  // Imprime as leituras atuais no monitor serial da IDE do Arduino
+  Serial.print ("Leitura atual do sensor: ");
+  Serial.println(sensorValue);
+  delay(130);
+  
+           
+  delay(1000);
+}

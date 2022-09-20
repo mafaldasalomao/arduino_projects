@@ -1,0 +1,64 @@
+//Include the SoftwareSerial library
+#include "SoftwareSerial.h"
+
+//Create a new software  serial
+SoftwareSerial bluetooth(1, 0); //TX, RX (Bluetooth)
+  
+const int ledPin3 = 13;
+const int ledPin2 = 12;
+const int ledPin1 = 11;
+const int ledPin0 = 10;
+int incomingByte;      // a variable to read incoming serial data into
+
+void setup() {
+  //Initialize the software serial
+  bluetooth.begin(9600);
+  
+  // initialize the LED pin as an output:
+  pinMode(ledPin0, OUTPUT);
+}
+
+void loop() {
+  // see if there's incoming serial data:
+  if (bluetooth.available() > 0) {
+    // read the oldest byte in the serial buffer:
+    incomingByte = bluetooth.read();
+    // if it's a capital H (ASCII 72), turn on the LED:
+    if (incomingByte == '1') {
+      digitalWrite(ledPin0, HIGH);
+      bluetooth.println("LED: ON");
+    }
+    // if it's an L (ASCII 76) turn off the LED:
+    if (incomingByte == 'a') {
+      digitalWrite(ledPin0, LOW);
+      bluetooth.println("LED: OFF");
+    }
+    if (incomingByte == '2') {
+      digitalWrite(ledPin1, HIGH);
+      bluetooth.println("LED: ON");
+    }
+    // if it's an L (ASCII 76) turn off the LED:
+    if (incomingByte == 'b') {
+      digitalWrite(ledPin1, LOW);
+      bluetooth.println("LED: OFF");
+    }
+    if (incomingByte == '3') {
+      digitalWrite(ledPin2, HIGH);
+      bluetooth.println("LED: ON");
+    }
+    // if it's an L (ASCII 76) turn off the LED:
+    if (incomingByte == 'c') {
+      digitalWrite(ledPin2, LOW);
+      bluetooth.println("LED: OFF");
+    }
+    if (incomingByte == '4') {
+      digitalWrite(ledPin3, HIGH);
+      bluetooth.println("LED: ON");
+    }
+    // if it's an L (ASCII 76) turn off the LED:
+    if (incomingByte == 'd') {
+      digitalWrite(ledPin3, LOW);
+      bluetooth.println("LED: OFF");
+    }
+  }
+}

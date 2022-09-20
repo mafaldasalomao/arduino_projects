@@ -1,0 +1,23 @@
+#include <ROBOEDU.h>
+
+void setup()
+{
+}
+
+void loop()
+{
+  if (( ( ultrasound_sensor() ) < ( 15 ) ))
+  {
+    servo_right_back (75);
+    servo_left (75);
+    delay( 1000 );
+    servo_right (75);
+    servo_right_back (75);
+    delay( 1000 );
+  }
+  else
+  {
+    servo_left_back (75);
+    servo_right_back (75);
+  }
+}

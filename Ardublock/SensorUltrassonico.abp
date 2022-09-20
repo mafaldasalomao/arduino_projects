@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cb:CODEBLOCKS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://education.mit.edu/openblocks/ns http://education.mit.edu/openblocks/codeblocks.xsd" xmlns:cb="http://education.mit.edu/openblocks/ns">
+<Pages collapsible-pages="yes" drawer-with-page="yes">
+<Page page-color="128 128 128" page-drawer="Main" page-infullview="yes" page-name="Main" page-width="1366">
+<PageBlocks>
+<Block genus-name="ROBOEDU_servo_right_back" id="189">
+<Location>
+<X>478</X>
+<Y>362</Y>
+</Location>
+<BeforeBlockId>186</BeforeBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="190" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="190">
+<Label>75</Label>
+<Location>
+<X>648</X>
+<Y>365</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="189" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="ROBOEDU_servo_left_back" id="186">
+<Location>
+<X>478</X>
+<Y>332</Y>
+</Location>
+<BeforeBlockId>159</BeforeBlockId>
+<AfterBlockId>189</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="187" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="187">
+<Label>75</Label>
+<Location>
+<X>654</X>
+<Y>335</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="186" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="ROBOEDU_servo_right_back" id="178">
+<Location>
+<X>479</X>
+<Y>261</Y>
+</Location>
+<BeforeBlockId>184</BeforeBlockId>
+<AfterBlockId>182</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="179" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="delay" id="182">
+<Location>
+<X>479</X>
+<Y>291</Y>
+</Location>
+<BeforeBlockId>178</BeforeBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="183" connector-kind="socket" connector-type="number" init-type="number" label="(ms)" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="183">
+<Label>1000</Label>
+<Location>
+<X>575</X>
+<Y>294</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="182" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="number" id="179">
+<Label>75</Label>
+<Location>
+<X>649</X>
+<Y>264</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="178" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="ROBOEDU_servo_right" id="184">
+<Location>
+<X>479</X>
+<Y>231</Y>
+</Location>
+<BeforeBlockId>180</BeforeBlockId>
+<AfterBlockId>178</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="185" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="185">
+<Label>75</Label>
+<Location>
+<X>627</X>
+<Y>234</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="184" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="delay" id="180">
+<Location>
+<X>479</X>
+<Y>201</Y>
+</Location>
+<BeforeBlockId>172</BeforeBlockId>
+<AfterBlockId>184</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="181" connector-kind="socket" connector-type="number" init-type="number" label="(ms)" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="181">
+<Label>1000</Label>
+<Location>
+<X>575</X>
+<Y>204</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="180" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="ROBOEDU_servo_right_back" id="174">
+<Location>
+<X>479</X>
+<Y>141</Y>
+</Location>
+<BeforeBlockId>159</BeforeBlockId>
+<AfterBlockId>172</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="175" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="175">
+<Label>75</Label>
+<Location>
+<X>649</X>
+<Y>144</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="174" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="ROBOEDU_servo_left" id="172">
+<Location>
+<X>479</X>
+<Y>171</Y>
+</Location>
+<BeforeBlockId>174</BeforeBlockId>
+<AfterBlockId>180</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="173" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="173">
+<Label>75</Label>
+<Location>
+<X>635</X>
+<Y>174</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="172" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="ROBOEDU_ultrasound_sensor" id="171">
+<Location>
+<X>492</X>
+<Y>111</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="160" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="number" id="162">
+<Label>15</Label>
+<Location>
+<X>697</X>
+<Y>111</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="160" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="less" id="160">
+<Location>
+<X>482</X>
+<Y>108</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="159" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="171" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="bottom"/>
+<BlockConnector con-block-id="162" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="ifelse" id="159">
+<Location>
+<X>366</X>
+<Y>105</Y>
+</Location>
+<BeforeBlockId>158</BeforeBlockId>
+<Sockets num-sockets="3">
+<BlockConnector con-block-id="160" connector-kind="socket" connector-type="boolean" init-type="boolean" label="teste" position-type="single"/>
+<BlockConnector con-block-id="174" connector-kind="socket" connector-type="cmd" init-type="cmd" label="entao" position-type="single"/>
+<BlockConnector con-block-id="186" connector-kind="socket" connector-type="cmd" init-type="cmd" label="senao" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="loop" id="158">
+<Location>
+<X>281</X>
+<Y>97</Y>
+</Location>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="159" connector-kind="socket" connector-type="cmd" init-type="cmd" label="fazer" position-type="single"/>
+</Sockets>
+</Block>
+</PageBlocks>
+</Page>
+</Pages>
+</cb:CODEBLOCKS>

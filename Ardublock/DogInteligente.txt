@@ -1,0 +1,39 @@
+#include <ROBOEDU.h>
+
+void setup()
+{
+}
+
+void loop()
+{
+  if (( ( ultrasound_sensor() ) >= ( 25 ) ))
+  {
+    servo_left (75);
+    servo_right (75);
+  }
+  while ( ( ( ultrasound_sensor() ) >= ( 25 ) ) )
+  {
+    LED_color(false , true , false);
+  }
+
+  if (( ( ultrasound_sensor() ) <= ( 15 ) ))
+  {
+    servo_left_back (75);
+    servo_right_back (75);
+  }
+  while ( ( ( ultrasound_sensor() ) <= ( 15 ) ) )
+  {
+    LED_color(true , false , false);
+  }
+
+  if (( ( ( ultrasound_sensor() ) > ( 15 ) ) && ( ( ultrasound_sensor() ) < ( 25 ) ) ))
+  {
+    servo_left_stop (); 
+    servo_right_stop (); 
+  }
+  while ( ( ( ( ultrasound_sensor() ) > ( 15 ) ) && ( ( ultrasound_sensor() ) < ( 25 ) ) ) )
+  {
+    LED_color(false , false , true);
+  }
+
+}

@@ -1,0 +1,12 @@
+#include <ROBOEDU.h>
+
+void setup()
+{
+}
+
+void loop()
+{
+  buzzer (400 , 100);
+  buzzer (800 , 100);
+}
+

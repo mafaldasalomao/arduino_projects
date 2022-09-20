@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cb:CODEBLOCKS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://education.mit.edu/openblocks/ns http://education.mit.edu/openblocks/codeblocks.xsd" xmlns:cb="http://education.mit.edu/openblocks/ns">
+<Pages collapsible-pages="yes" drawer-with-page="yes">
+<Page page-color="128 128 128" page-drawer="Main" page-infullview="yes" page-name="Main" page-width="1366">
+<PageBlocks>
+<Block genus-name="ROBOEDU_LED_color" id="167">
+<Location>
+<X>478</X>
+<Y>231</Y>
+</Location>
+<BeforeBlockId>159</BeforeBlockId>
+<Sockets num-sockets="3">
+<BlockConnector con-block-id="168" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Vermelho" position-type="single"/>
+<BlockConnector con-block-id="169" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Verde" position-type="single"/>
+<BlockConnector con-block-id="170" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Azul" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="false" id="170">
+<Location>
+<X>606</X>
+<Y>282</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="167" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="false" id="169">
+<Location>
+<X>606</X>
+<Y>258</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="167" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="false" id="168">
+<Location>
+<X>606</X>
+<Y>234</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="167" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="ROBOEDU_LED_color" id="163">
+<Location>
+<X>479</X>
+<Y>141</Y>
+</Location>
+<BeforeBlockId>159</BeforeBlockId>
+<Sockets num-sockets="3">
+<BlockConnector con-block-id="164" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Vermelho" position-type="single"/>
+<BlockConnector con-block-id="165" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Verde" position-type="single"/>
+<BlockConnector con-block-id="166" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Azul" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="true" id="166">
+<Location>
+<X>607</X>
+<Y>192</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="163" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="true" id="165">
+<Location>
+<X>607</X>
+<Y>168</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="163" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="true" id="164">
+<Location>
+<X>607</X>
+<Y>144</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="163" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="number" id="162">
+<Label>50</Label>
+<Location>
+<X>711</X>
+<Y>111</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="160" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="ROBOEDU_LDR_top" id="161">
+<Location>
+<X>492</X>
+<Y>111</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="160" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="greater" id="160">
+<Location>
+<X>482</X>
+<Y>108</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="159" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="161" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="bottom"/>
+<BlockConnector con-block-id="162" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="ifelse" id="159">
+<Location>
+<X>366</X>
+<Y>105</Y>
+</Location>
+<BeforeBlockId>158</BeforeBlockId>
+<Sockets num-sockets="3">
+<BlockConnector con-block-id="160" connector-kind="socket" connector-type="boolean" init-type="boolean" label="teste" position-type="single"/>
+<BlockConnector con-block-id="163" connector-kind="socket" connector-type="cmd" init-type="cmd" label="entao" position-type="single"/>
+<BlockConnector con-block-id="167" connector-kind="socket" connector-type="cmd" init-type="cmd" label="senao" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="loop" id="158">
+<Location>
+<X>281</X>
+<Y>97</Y>
+</Location>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="159" connector-kind="socket" connector-type="cmd" init-type="cmd" label="fazer" position-type="single"/>
+</Sockets>
+</Block>
+</PageBlocks>
+</Page>
+</Pages>
+</cb:CODEBLOCKS>

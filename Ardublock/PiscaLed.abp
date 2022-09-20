@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cb:CODEBLOCKS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://education.mit.edu/openblocks/ns http://education.mit.edu/openblocks/codeblocks.xsd" xmlns:cb="http://education.mit.edu/openblocks/ns">
+<Pages collapsible-pages="yes" drawer-with-page="yes">
+<Page page-color="128 128 128" page-drawer="Main" page-infullview="yes" page-name="Main" page-width="1366">
+<PageBlocks>
+<Block genus-name="pin-write-digital" id="116">
+<Location>
+<X>185</X>
+<Y>108</Y>
+</Location>
+<BeforeBlockId>115</BeforeBlockId>
+<AfterBlockId>119</AfterBlockId>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="117" connector-kind="socket" connector-type="number" init-type="number" label="#" position-type="single"/>
+<BlockConnector con-block-id="118" connector-kind="socket" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="delay" id="119">
+<Location>
+<X>185</X>
+<Y>162</Y>
+</Location>
+<BeforeBlockId>116</BeforeBlockId>
+<AfterBlockId>121</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="120" connector-kind="socket" connector-type="number" init-type="number" label="(ms)" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="pin-write-digital" id="121">
+<Location>
+<X>185</X>
+<Y>192</Y>
+</Location>
+<BeforeBlockId>119</BeforeBlockId>
+<AfterBlockId>124</AfterBlockId>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="122" connector-kind="socket" connector-type="number" init-type="number" label="#" position-type="single"/>
+<BlockConnector con-block-id="123" connector-kind="socket" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="delay" id="124">
+<Label>espera</Label>
+<Location>
+<X>185</X>
+<Y>246</Y>
+</Location>
+<BeforeBlockId>121</BeforeBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="125" connector-kind="socket" connector-type="number" init-type="number" label="(ms)" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="125">
+<Label>1000</Label>
+<Location>
+<X>281</X>
+<Y>249</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="124" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="digital-low" id="123">
+<Location>
+<X>341</X>
+<Y>219</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="121" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="number" id="122">
+<Label>13</Label>
+<Location>
+<X>341</X>
+<Y>195</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="121" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="number" id="120">
+<Label>1000</Label>
+<Location>
+<X>281</X>
+<Y>165</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="119" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="digital-high" id="118">
+<Location>
+<X>341</X>
+<Y>135</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="116" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="number" id="117">
+<Label>13</Label>
+<Location>
+<X>341</X>
+<Y>111</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="116" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="loop" id="115">
+<Location>
+<X>100</X>
+<Y>100</Y>
+</Location>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="116" connector-kind="socket" connector-type="cmd" init-type="cmd" label="fazer" position-type="single"/>
+</Sockets>
+</Block>
+</PageBlocks>
+</Page>
+</Pages>
+</cb:CODEBLOCKS>

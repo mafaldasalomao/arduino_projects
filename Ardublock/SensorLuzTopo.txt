@@ -1,0 +1,17 @@
+#include <ROBOEDU.h>
+
+void setup()
+{
+}
+
+void loop()
+{
+  if (( ( LDR_top() ) > ( 50 ) ))
+  {
+    LED_color(true , true , true);
+  }
+  else
+  {
+    LED_color(false , false , false);
+  }
+}

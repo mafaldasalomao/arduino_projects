@@ -1,0 +1,13 @@
+#include <ROBOEDU.h>
+
+void setup()
+{
+}
+
+void loop()
+{
+  LED_color(true , false , false);
+  delay( 2000 );
+  LED_color(false , false , true);
+  delay( 2000 );
+}
